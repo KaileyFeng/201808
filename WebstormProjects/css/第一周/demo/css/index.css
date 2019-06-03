@@ -1,0 +1,314 @@
+
+.main {
+    /*width: 1205px;*/
+    margin:0 auto;
+}
+.header{
+    width: 1205px;
+    height: 84px;
+    border:1px solid red;
+}
+.header .log{
+    float: left;
+    width: 176px;
+    height: 52px;
+    /*line-height: 84px;*/
+    margin-top: 12px;
+    margin-right:60px;
+    cursor: pointer;
+}
+
+
+.header .nav{
+    float: left;
+    margin-right: 60px;
+ }
+.header .nav li{
+    float: left;
+    line-height: 84px;
+    margin-right: 40px;
+    color: #2a2a2a;
+    font-size: 14px;
+}
+.header .nav .noMargin{
+    margin-right: 0;
+}
+.header .nav li:hover{
+    color: #487d98;
+}
+
+.header .login{
+    float: left;
+    line-height: 84px;
+}
+
+.header .login .shopping{
+    float: left;
+    position: relative;
+}
+.header .login .shopping span{
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.header .login .shopping em{
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 22px;
+    background: url("../img/icon1.png") no-repeat;
+    margin-right:5px;
+}
+.header .login .shopping:hover span{
+    color: #487d98;
+}
+.header .login .shopping:hover em{
+    background: url("../img/icon2 (1).png") no-repeat;
+}
+
+
+/*购物车框*/
+.header .login .shopping span:hover .shop-car{
+    display: block;
+}
+
+.header .login .shopping .shop-car{
+    width: 378px;
+    height: 477px;
+    display: none;
+    position: absolute;
+    left: -120px;
+    top:60px;
+    background: #fff;
+    box-shadow: 2px 2px 6px rgba(0,0,0,.3);
+}
+
+.header .login .shopping .shop-car .top{
+    margin: 0px auto;
+    width: 350px;
+    height: 84px;
+    border-bottom: 1px solid #adadae;
+}
+.header .login .shopping .shop-car .top h4{
+    float: left;
+    font-weight: normal;
+}
+.header .login .shopping .shop-car .empty{
+    float: right;
+    font-size: 14px;
+    color: #adadae;
+}
+
+.header .login .shopping .shop-car .middle{
+    margin: 0px auto;
+    width: 350px;
+    height: 249px;
+
+}
+.header .login .shopping .shop-car  .img-empty{
+    width: 68px;
+    height: 68px;
+    margin:60px auto 30px;
+    background: url("../img/gouwuche.png") no-repeat;
+}
+.header .login .shopping .shop-car .emp-car{
+    margin:0 auto;
+    width: 112px;
+    text-align: center;
+    font-size: 14px;
+    color: #414141;
+    border-bottom: 1px solid #adadae;
+}
+.header .login .shopping .shop-car .emp-cla{
+    font-size: 14px;
+    color: #487d98;
+    width: 350px;
+    text-align: center;
+    border-bottom: 1px solid #adadae;
+}
+
+.header .login .shopping .shop-car .footer {
+    margin: 10px auto;
+    width:350px;
+}
+.header .login .shopping .shop-car .footer h4{
+    float: left;
+    font-size: 14px;
+    font-weight: normal;
+}
+.header .login .shopping .shop-car .footer .right{
+    float: right;
+    font-weight: normal;
+}
+
+
+.header .login .link{
+    margin-right: 15px;
+    color: #adadae;
+    font-size: 14px;
+}
+.header .login .link:hover{
+    color: #487d98;
+}
+
+
+/*swiper*/
+.swiper{
+    width: 1205px;
+    /*height: 360px;*/
+    overflow: hidden;
+    border:1px solid red;
+    position: relative;
+
+}
+.swiper .swiper-img{
+    width: 4820px;
+    height: 360px;
+    /*position: relative;*/
+}
+.swiper .swiper-img ul li{
+    width: 1205px;
+    float: left;
+
+}
+/**/
+.swiper .list{
+    width:240px;
+    height: 360px;
+    position: absolute;
+    left:0;
+    top:0;
+    background-color: rgba(0,0,0,.2);
+}
+.swiper .list ul li{
+    line-height: 71px;
+    /*text-align: center;*/
+
+}
+.swiper .list ul li .noBorder{
+    border:none;
+}
+.swiper .list ul li a{
+    display: inline-block;
+    color: #fdfdfe;
+    margin:0 30px 0;
+    padding-left: 8px;
+    width: 190px;
+    font-size: 14px;
+    border-bottom: 1px dashed rgba(255,255,255,.5);
+}
+.swiper .list ul li a em{
+    float: right;
+    font-style: normal;
+    padding-right:18px;
+}
+.swiper .list ul li:hover{
+    background-color: rgba(0,0,0,.4)
+}
+.swiper .list ul li:hover .hiddenImg{
+    display: block;
+}
+/*hiddenImg*/
+.swiper .list ul li .hiddenImg{
+    display: none;
+    position: absolute;
+    left: 240px;
+    top: 0;
+    background: red;
+    width:574px;
+    height: 360px;
+    background: url("../img/bigdataBg.png");
+}
+.swiper .list ul li .bg2{
+    background: url("../img/bannerbg3.png");
+}
+.swiper .list ul li .bg4{
+    background: url("../img/bannerbg3.png");
+}
+.swiper .list ul li .bg3{
+    background: url("../img/bannerbg4.png");
+}
+.swiper .list ul li .bg5{
+    background: url("../img/stone.jpg");
+}
+
+/*hiddenImg list*/
+.swiper .list ul li .hiddenImg dl{
+    margin-left:33px;
+}
+.swiper .list ul li .hiddenImg dl dt{
+    color: #0b0b0b;
+    font-size: 16px;
+    line-height: 82px;
+}
+.swiper .list ul li .hiddenImg dl dd{
+    line-height: 14px;
+    color: #4a4b4d;
+    font-size: 14px;
+    margin-bottom:24px;
+}
+
+/*actual*/
+.actual {
+    width: 1205px;
+    margin-top:39px;
+}
+.actual h3{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 14px;
+    margin-bottom: 20px;
+}
+
+.actual .list ul{
+    margin-left:-65px;
+}
+.actual .list li{
+    position: relative;
+    float: left;
+    width: 251px;
+    height: 184px;
+    margin-left: 65px;
+
+}
+.actual .list li img{
+    width: 100%;
+}
+.actual .list .list-info{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width:251px;
+    background: #fff;
+    box-shadow: 2px 2px 6px rgba(0,0,0,.3),-2px 2px 6px rgba(0,0,0,.3);
+}
+.actual .list .list-info .top{
+    padding:17px 15px;
+}
+.actual .list .list-info .top h4{
+    font-weight: normal;
+    font-style: normal;
+    color: #1e1e1e;
+    margin-bottom:7px;
+}
+.actual .list .list-info .top p{
+    display: none;
+    font-size: 12px;
+    color: #4a4b4d;
+}
+.actual .list li:hover .top p{
+    display: block;
+}
+.actual .list .list-info .bottom{
+    margin:17px 15px;
+}
+.actual .list .list-info .bottom .bot-left{
+    float: left;
+    color: red;
+    font-size: 12px;
+}
+.actual .list .list-info .bottom .bot-right{
+    float: right;
+    color: #4a4b4d;
+    font-size: 12px;
+}

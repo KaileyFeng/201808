@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课堂学习</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #box {
+            width: 300px;
+            height: 496px;
+            border: 1px solid darkgreen;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            height: 70px;
+            border-bottom: 1px solid red;
+        }
+
+        .bg1 {
+            background: #c4e116;
+        }
+
+        .bg2 {
+            background: #d4ffda;
+        }
+
+        .bg3 {
+            background: #a8e9ff;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <ul>
+        <li class="bg1"></li>
+        <li class="bg2"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+</body>
+</html>
+<script>
+    let lis = document.getElementsByTagName("li");
+    for (var i = 0; i < lis.length; i++) {
+        lis[i].className = 'bg' + (i % 2 + 1);
+        lis[i].index = 'bg' + (i % 2 + 1);
+        lis[i].onmouseover = function () {
+            this.className = 'bg3';
+        }
+        lis[i].onmouseout = function(){
+            this.className = this.index;
+        }
+    }
+</script>

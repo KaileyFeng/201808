@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课堂学习</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function add() {
+        var sum = 0;
+        for(var i=0;i<arguments.length;i++){
+            if(!isNaN(arguments[i])){
+                arguments[i] = Number(arguments[i]);
+                sum = sum+arguments[i];
+            }
+        }
+        return sum;
+    }
+    console.log(add(1, 2,"我的", 3,4,"名字",5,"2",[2]))
+
+</script>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课堂学习</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+
+    var jsonStudents = [
+        {name:"Dawson", totalScore:"197", Chinese:"100",math:"97"},
+        {name:"HanMeiMei", totalScore:"196",Chinese:"99", math:"97"},
+        {name:"LiLei", totalScore:"185", Chinese:"88", math:"97"},
+        {name:"XiaoMing", totalScore:"196", Chinese:"96",math:"100"},
+        {name:"Jim", totalScore:"196", Chinese:"98",math:"98"},
+        {name:"Joy", totalScore:"198", Chinese:"99",math:"99"}];
+    var a = jsonStudents.sort(function(a,b){
+        var value1 = a.totalScore,
+            value2 = b.totalScore;
+        if(value1 === value2){
+            return b.Chinese - a.Chinese;
+        }
+        return value2 - value1;
+    });
+    console.log(a);
+</script>

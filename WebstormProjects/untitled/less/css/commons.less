@@ -1,0 +1,19 @@
+.centerPos(@w:100,@h:100){
+  position: absolute;
+  top:50%;
+  left: 50%;
+  margin-top: unit(-(@w/2),px);
+  margin-left: unit(-(@h/2),px);
+}
+
+// 给当前元素设置过渡动画
+.transition(@property:all,@duration:.5s,@timing-function:linear,@delay:0s){
+
+  // @property:all   支持所有的属性
+  // @duration:.5s    默认时间0.5s
+  // @timing-function:linear    匀速运动
+  // @delay:0s    默认0s延迟
+  -webkit-transition: @arguments;  // 把四个参数值 一次复制到末尾
+  transition: @arguments;
+
+}

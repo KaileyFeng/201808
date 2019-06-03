@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课堂学习</title>
+    <style>
+        #box{
+            width: 100px;
+            height: 30px;
+            font-size: 22px;
+            letter-spacing: 2px;
+            background: cornflowerblue;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div id="box"></div>
+</body>
+</html>
+<script>
+    let box = document.getElementById("box");
+    let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
+    let newStr = '';
+    for (let i = 0; i < 4; i++) {
+        let index = Math.round(Math.random() * (str.length - 1 - 0) + 0);
+        if (newStr.indexOf(str[index]) == -1) {
+            newStr += str[index];
+        } else {
+            i--
+        }
+        box.innerHTML = newStr;
+    }
+</script>

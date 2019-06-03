@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+
+
+</html>
+<script>
+    var ary = [1, 2, 9, 4, 6, 5, 8, 7, 3, 0];
+
+    function quick(ary) {
+        if (ary.length <= 1) {
+            return ary;
+        }
+        let minIndex = Math.floor(ary.length / 2);
+        let mid = ary.splice(minIndex, 1);
+        let left = [], right = []
+
+        for (var i = 0; i < ary.length; i++) {
+            if (ary[i] < mid) {
+                left.push(ary[i])
+            } else {
+                right.push(ary[i])
+            }
+
+        }
+        return quick(left).concat(mid, quick(right));
+    }
+    console.log(quick(ary));
+
+
+    //    var myCad = [];
+    //    myCad.push(ary[0]);
+    //    for (var i = 0; i < ary.length; i++) {
+    //        for (var j = myCad.length; j >= 0; j--) {
+    //            if (ary[i] > myCad[j]) {
+    //                myCad.splice(j + 1, 0, ary[i])
+    //                break;
+    //            }
+    //        }
+    //        if (myCad.indexOf(ary[i]) === -1) {
+    //            myCad.unshift(ary[i])
+    //        }
+    //    }
+    //    console.log(myCad);
+
+
+    //        for (var j = 0; j < ary.length - 1; j++) {
+    //            for (var i = 0; i < ary.length - j - 1; i++) {
+    //                if (ary[i]>ary[i+1]) {
+    //                    var cur = null;
+    //                    cur = ary[i];
+    //                    ary[i] = ary[i+1];
+    //                    ary[i+1] = cur;
+    //                }
+    //            }
+    //        }
+    //        console.log(ary);
+
+
+    //    function fn(ary) {
+    //        ary.sort(function (a, b) {
+    //            return a - b;
+    //        })
+    //        return ary;
+    //    }
+    //    console.log(fn(ary));
+
+</script>

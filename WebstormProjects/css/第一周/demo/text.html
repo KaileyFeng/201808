@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课堂学习</title>
+</head>
+<body>
+<!--<div class="search">-->
+    <!--<label>图形验证码：</label><input class="input-num" type="text">-->
+    <!--<a href="javascript:;"><img class="icon-scan" src=""></a>-->
+    <!--<input class="btn-search" value="查询" type="button">-->
+<!--</div>-->
+
+
+
+
+<script type="text/javascript">
+    $(function(){
+        if("\v"=="v"){//true为IE浏览器，感兴趣的同学可以去搜下，据说是现有最流行的判断浏览器的方法
+            document.getElementById("a").attachEvent("onporpertychange",function(e){
+                console.log("inputting!!");
+            }
+        }else{
+            document.getElementById("a").addEventListener("onporpertychange",function(e){
+                console.log("inputting!!");
+            }
+        }
+    });
+</script>
+<input type="text" id="a"/>
+</body>
+</html>
+

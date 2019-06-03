@@ -1,0 +1,146 @@
+.header-main{
+    width: 100%;
+    background-color: #fd6a27;
+    position: relative;
+}
+.nav{
+    height: 88px;
+    background-color: rgba(0,0,0,.3);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.nav .nav-ma{
+    width: 990px;
+    margin: 0 auto;
+}
+.nav .nav-ma ul{
+    float: right;
+    margin-right: 20px;
+}
+.nav .nav-ma ul li{
+    float: left;
+    line-height: 88px;
+    margin-left: 50px;
+}
+.nav .nav-ma ul li a{
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+.nav .nav-ma img{
+    margin-top: 20px;
+}
+
+.header-main .num{
+    width: 990px;
+    margin: 0 auto;
+}
+.header .num i{
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    margin-top: 242px;
+    cursor: pointer;
+}
+.header .num .bot1{
+    background: url("../img/l-btn.png") no-repeat;
+    float: left;
+    /*margin-left: 90px;*/
+}
+.header .num .bot2{
+    background: url("../img/r-btn.png") no-repeat;
+  /*  margin-right: 90px;*/
+}
+.header .num .six{
+    float: left;
+    width: 800px;
+    height: 458px; ;
+}
+
+
+.main ul li i{
+    display: inline-block;
+    background-image: url("../img/雪碧图.png");
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+/*    margin-left:110px;*/
+}
+.main ul li .ad{
+    background-position: 0 0;
+}
+.main ul li .num{
+    background-position: 0 -100px;
+}
+.main ul li .tan{
+    background-position: 0 -200px;
+}
+.main ul li .stop{
+    background-position: 0 -300px;
+}
+.main {
+    width: 990px;
+    margin: 0 auto;
+}
+.main ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.main ul li p{
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 750px){
+
+    .header .header-main{
+        width: 100%;
+    }
+    .header-main .nav{
+        width: 100%;
+    }
+    .header-main .nav .nav-ma{
+        width: 100%;
+    }
+    .header .header-main .num {
+        width: 100%;
+    }
+    .header .header-main .num .six{
+        width: 100%;
+        height: 100%;
+        margin-top: 60px;
+    }
+    .header-main .nav .nav-ma ul{
+        display: none;
+    }
+    .header .header-main .num i{
+        width: 50%;
+        height: 50%;
+        margin: 50px;
+        display: none;
+    }
+    .nav .nav-ma img{
+        margin-top: 30px;
+        margin-left: 20px;
+        width: 138px;
+        height: 28px;
+    }
+
+    .main{
+        width: 100%;
+        height: 100%;
+    }
+    .main ul li{
+        display: block;
+        width: 50%;
+    }
+    .main ul li p{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow-ellipsis:3 ;
+    }
+
+}

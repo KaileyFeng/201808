@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    var ary = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6];
+    var newAry = [];
+    //    1
+    //    function fn(ary){
+    //        ary.sort(function(a,b){
+    //            return a-b
+    //        });
+    //        for (var i = 0; i < ary.length; i++) {
+    //          if(ary[i]!==ary[i+1]){
+    //              newAry.push(ary[i])
+    //          }
+    //        }
+    //        return newAry
+    //    }
+
+    //    2
+    //    function fn(ary) {
+    //        ary.sort(function (a, b) {
+    //            return a - b
+    //        });
+    //        for (var i = 0; i < ary.length; i++) {
+    //            if(!newAry.includes(ary[i])){
+    //                newAry.push(ary[i])
+    //            }
+    //
+    //        }
+    //        return newAry;
+    //    }
+
+    //    3
+    //    function fn(ary) {
+    //        ary.sort(function (a, b) {
+    //            return a - b
+    //        });
+    //        for (var i = 0; i < ary.length; i++) {
+    //            if (newAry.indexOf(ary[i]) === -1) {
+    //                newAry.push(ary[i])
+    //            }
+    //        }
+    //        return newAry
+    //    }
+
+    //   console.log(fn(ary));
+
+    //4
+    console.log(...new Set(ary));
+
+</script>
